@@ -29,7 +29,13 @@
                 </div>
             </div>
             <div class="card-body">
-                Ilham Khalis Putra Agatha
+                @foreach($profile as $pro)
+                    {{$pro->nim}}
+                    {{$pro->nama}}
+                    {{$pro->jurusan}}
+                    {{$pro->kelas}}
+                    {{$pro->absen}}
+                @endforeach
             </div>
             <!-- /.card-body -->
             <!-- /.card-footer-->
